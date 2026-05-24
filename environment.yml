@@ -1,0 +1,15 @@
+name: MMM_PPI
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.14
+  - pip
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu116
+    - torch==1.12.0+cu116
+    - dgl-cu116==0.9.1
+    - lmdb==1.6.2
+    - nni==3.0
+    - numpy==1.26.2
+    - tqdm==4.66.1
